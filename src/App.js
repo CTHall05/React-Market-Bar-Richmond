@@ -1,5 +1,7 @@
 import Navbar from './Components/Navbar';
 import Hero from './Components/Hero';
+import EventSection from './Components/EventSection';
+import BookingForm from './Components/BookingForm';
 import './App.css';
 
 function App() {
@@ -7,6 +9,8 @@ function App() {
     <div className="App">
       <Navbar></Navbar>
       <Hero></Hero>
+      <EventSection></EventSection>
+      <BookingForm></BookingForm>
     </div>
   );
 }
