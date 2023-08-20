@@ -27,10 +27,14 @@ const BookingForm = () => {
   };
 
   return (
-    <div className="booking-form">
+    <div id="bookings" className="booking-form">
       <h2>Book the Bar</h2>
+      <p>
+        Have a work do planned? Birthday or special event? Fill out the form
+        below and let's talk!
+      </p>
       <form onSubmit={handleSubmit}>
-        <div>
+        <div className="booking-form-label">
           <label>First Name:</label>
           <input
             type="text"
@@ -39,7 +43,7 @@ const BookingForm = () => {
             onChange={handleChange}
           />
         </div>
-        <div>
+        <div className="booking-form-label">
           <label>Last Name:</label>
           <input
             type="text"
@@ -48,7 +52,7 @@ const BookingForm = () => {
             onChange={handleChange}
           />
         </div>
-        <div>
+        <div className="booking-form-label">
           <label>Number of People:</label>
           <input
             type="number"
@@ -57,7 +61,7 @@ const BookingForm = () => {
             onChange={handleChange}
           />
         </div>
-        <div>
+        <div className="booking-form-label">
           <label>Work Organization (optional):</label>
           <input
             type="text"
@@ -66,7 +70,7 @@ const BookingForm = () => {
             onChange={handleChange}
           />
         </div>
-        <div>
+        <div className="booking-form-label">
           <label>Email:</label>
           <input
             type="email"
@@ -75,7 +79,7 @@ const BookingForm = () => {
             onChange={handleChange}
           />
         </div>
-        <div>
+        <div className="booking-form-label">
           <label>Mobile Number:</label>
           <input
             type="tel"
