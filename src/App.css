@@ -5,9 +5,14 @@
 
 * {
   box-sizing: border-box;
-  --primary-colour: rgba(245, 176, 39);
+  --primary-colour: #f5b027;
+  --secondary-colour: #276cf5;
   --font-colour: black;
   font-family: chrysuni;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 /* Navbar Component Styles */
@@ -29,7 +34,7 @@
 }
 
 .nav-links li:hover {
-  color: black;
+  color: pink;
   cursor: pointer;
 }
 
@@ -115,10 +120,13 @@
 /* components/BookingForm.css */
 
 .booking-form {
-  padding: 3rem;
+  padding: 2rem;
   background-color: #f9f9f9;
   border: 1px solid #ddd;
   border-radius: 5px;
+  margin: auto;
+  height: 90vh;
+  width: 100%;
 }
 
 .booking-form h2 {
@@ -130,8 +138,15 @@
 .booking-form form {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-content: center;
   text-align: center;
   gap: 1rem;
+}
+
+.booking-form-label {
+  display: flex;
+  flex-direction: column;
 }
 
 .booking-form label {
@@ -158,4 +173,17 @@
 
 .booking-form button:hover {
   background-color: #e68a00;
+}
+
+/* AboutUs Component Styles */
+
+.AboutUs-Component-Section {
+  padding: 10px;
+  background-color: var(--secondary-colour);
+  color: white;
+}
+
+.carousel-container {
+  background-color: #777;
+  border-radius: 5px;
 }

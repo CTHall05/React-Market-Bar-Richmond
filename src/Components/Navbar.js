@@ -4,7 +4,7 @@ function Navbar() {
   const scrollToSection = (sectionId) => {
     const section = document.getElementById(sectionId);
     if (section) {
-      section.scrollIntroView({ behavior: 'smooth' });
+      section.scrollIntoView({ behavior: 'smooth' });
     }
   };
 
